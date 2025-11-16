@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(241, 227, 196);
+    padding: 15px;
+
+
+}
+
+.pnf_ob-ue {
+    color: rgb(113, 5, 29);
+    font-size: 80px;
+    font-weight: bold;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    line-height: 10px;
+    border: 2px solid rgb(113, 5, 29);
+    padding: 10px;
+    display: block;
+    width: 583px;
+    height: 190px;
+    border-radius: 2px;
+}
+
+.pnf_ob-un-ue {
+    font-size: 40px;
+}
+
+.pnf_text {
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+    line-height: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.pnf_footer {
+    border-top: 2px solid rgb(113, 5, 29);
+    padding: 30px;
+     display: flex;
+    justify-content: flex-end;
+}
+.pnf_madeby {
+    font-size: 20px;
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+   
+}

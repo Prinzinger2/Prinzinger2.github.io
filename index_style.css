@@ -1,0 +1,34 @@
+body {
+    background-color: darkorange;
+    border: 3px solid black;
+}
+
+.ob-ue_box {
+    display: block;
+    background-color: rgba(252, 186, 63, 0.74);
+}
+
+.ob-ue {
+    color: black;
+    font-size: 20px;
+
+
+    font-family: "Belanosima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.ob-un-ue {
+    color: black;
+}
+
+.secret1_link {
+
+    font-family: "Chokokutai", system-ui;
+    color: rgba(255, 140, 0, 0.63);
+    font-style: normal;
+    text-decoration: none;
+}
+
+.link1 {}
