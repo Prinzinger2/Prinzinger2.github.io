@@ -1,22 +1,35 @@
 body {
-    background-color: darkorange;
+    background-color: rgb(230, 221, 207);
     border: 3px solid black;
+    margin: 0px;
+    padding: 10px;
+    height: inherit;
+    width: inherit;
+    font-family: "Kanit", sans-serif;
 }
 
 .ob-ue_box {
-    display: block;
+    display: flex;
     background-color: rgba(252, 186, 63, 0.74);
+    flex-direction: column;
+    flex-grow: inherit;
+    border: 3px solid black;
+    padding: 10px;
+
 }
 
 .ob-ue {
-    color: black;
-    font-size: 20px;
-
-
-    font-family: "Belanosima", sans-serif;
+    text-decoration: underline;
+    color: rgb(25, 8, 0);
+    font-size: 25px;
+    font-family: "Belanosima", sans-serif !important;
     font-weight: 400;
     font-style: normal;
-
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
 }
 
 .ob-un-ue {
@@ -24,11 +37,41 @@ body {
 }
 
 .secret1_link {
-
-    font-family: "Chokokutai", system-ui;
-    color: rgba(255, 140, 0, 0.63);
-    font-style: normal;
-    text-decoration: none;
+    display: flex;
+    width: inherit;
+    height: inherit;
 }
 
-.link1 {}
+.link1 {
+    font-family: "Chokokutai", system-ui;
+    color: rgb(227, 211, 202);
+    font-style: normal;
+    text-decoration: none;
+    font-size: 5px;
+}
+
+.footer {
+    display: fgrid;
+    border-top: 3px solid black;
+    flex-direction: row;
+}
+
+.footer_left {
+    display: grid;
+    height: 128px;
+    width: 128px;
+}
+
+.footer_middle {
+    display: grid;
+    height: 100px;
+    width: 100px;
+}
+
+.smiley-face {
+    display: flex;
+    width: 64px;
+    height: 64px;
+}
+
+.footer_right {}
