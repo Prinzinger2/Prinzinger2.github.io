@@ -200,9 +200,15 @@ body {
     font-size: 15px;
 }
 
+.text_img_box {
+    height: auto;
+    width: 100px;
+}
+
 .text_img {
     height: auto;
     width: 100px;
+
 }
 
 .footer {
@@ -277,4 +283,6 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    border: 2px solid rgb(201, 112, 34);
+    border-radius: 2px;
 }

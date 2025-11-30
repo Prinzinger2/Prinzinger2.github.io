@@ -179,10 +179,6 @@ body {
     margin-top: 5px;
 }
 
-.text_box {
-    border-bottom: 2px solid rgb(201, 112, 34);
-}
-
 .text-head {
     font-size: 20px;
     font-weight: bold;
@@ -203,6 +199,10 @@ body {
 .text_img {
     height: auto;
     width: 1000px;
+}
+
+.joe {
+    border: 2px solid rgb(201, 112, 34);
 }
 
 .footer {
