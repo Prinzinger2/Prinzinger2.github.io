@@ -4,162 +4,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sc-st-pa_style.css">
     <title>Schere-Stein-Papier</title>
-
-
+    <link rel="stylesheet" href="sc-st-pa_style.css">
 </head>
 
 <body>
-    <h1 id="status">Wählen sie bitte Schere, Stein oder Papier!</h1>
-    <h1 id="spieler_status">Noch nichts Gewählt.</h1>
-    <h1 id="bot_status">Noch nichts Gewählt.</h1>
-    <h1 id="total_spieler_wins_status">Total Spieler Wins:0</h1>
-    <h1 id="total_bot_wins_status">Total Bot Wins: 0</h1>
-    <h1 id="total_draws_status">Total Drwas: 0</h1>
+    <div class="header">
+        <div class="header_left">
+            <div class="status_left">Aktuelle Seite: </div>
+            <div class="status_right">Layout1</div>
+        </div>
+        <div class="header_right">
+            <div class="suchen-left">Suchen</div>
+            <div class="suchen-right">suchen...</div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="aside">
+            <div class="menue-head">Menü:</div>
+            <div class="menue"><a class="menue_link" href="index.html">Startseite</a></div>
+            <div class="menue"><a class="menue_link" href="sc-st-pa.html">Schere Stein Papier</a></div>
+            <div class="menue"><a class="menue_link" href="chaty-sc-st-pa3.html">AI Schere Stein Papier</a></div>
+            <div class="menue"><a class="menue_link" href="kontakte.html">Kontakte</a></div>
+            <div class="menue"><a class="menue_link" href="impressum.html">Impressum</a></div>
+        </div>
+        <div class="main">
+            <div class="top_head_box">
+                <div class="top_head">Schere Stein Papier</div>
+                <div class="top_sub-head">
+                    <p>Hier ist meine eigens programmierte Version von Schere Stein Papier, die leider sehr verbugt ist.
+                        Ich habe aber zur Zeit keine Zeit, das Teil fertigzustellen. Ich weis nicht einmal ob sie zur
+                        Zeit funtioniert, Naja.</p>
+                </div>
+            </div>
+            <div class="center_text_box">
+
+                <body>
+                    <h1 id="status">Wählen sie bitte Schere, Stein oder Papier!</h1>
+                    <h1 id="spieler_status">Noch nichts Gewählt.</h1>
+                    <h1 id="bot_status">Noch nichts Gewählt.</h1>
+                    <h1 id="total_spieler_wins_status">Total Spieler Wins:0</h1>
+                    <h1 id="total_bot_wins_status">Total Bot Wins: 0</h1>
+                    <h1 id="total_draws_status">Total Drwas: 0</h1>
 
 
-    <button onclick="spielerschere(spieler_input)">Schere</button>
-    <button onclick="spielerstein(spieler_input)">Stein</button>
-    <button onclick="spielerpapier(spieler_input)">Papier</button>
-    <button onclick="confirm(con, total_spieler_wins, total_bot_wins, total_draws, beenden, spieler_input, bot_input)">
-        Confirm
-    </button>
-    <button onclick="cancel()">Cancel</button>
-    <button onclick="reset()">Reset</button>
-    <button onclick="total_reset()">Total - Reset</button>
-    <script>
-        //Variablen
-        let spieler_input = 3;
-        let bot_input = 0;
-        let spieler_wins = 0;
-        let bot_wins = 0;
-        let total_spieler_wins = 0;
-        let total_bot_wins = 0;
-        let draws = 0;
-        let total_draws = 0;
-        let beenden = 0;
-        let con = 0;
+                    <button onclick="spielerschere(spieler_input)">Schere</button>
+                    <button onclick="spielerstein(spieler_input)">Stein</button>
+                    <button onclick="spielerpapier(spieler_input)">Papier</button>
+                    <button
+                        onclick="confirm(con, total_spieler_wins, total_bot_wins, total_draws, beenden, spieler_input, bot_input)">
+                        Confirm
+                    </button>
+                    <button onclick="cancel()">Cancel</button>
+                    <button onclick="reset()">Reset</button>
+                    <button onclick="total_reset()">Total - Reset</button>
+                    <script>
+                        //Variablen
+                        let spieler_input = 3;
+                        let bot_input = 0;
+                        let spieler_wins = 0;
+                        let bot_wins = 0;
+                        let total_spieler_wins = 0;
+                        let total_bot_wins = 0;
+                        let draws = 0;
+                        let total_draws = 0;
+                        let beenden = 0;
+                        let con = 0;
 
-        //Spieler Input
-        function spielerschere(spieler_input) {
-            spieler_input = 0;
-            document.getElementById("spieler_status").innerHTML = "You choose Schere";
-            document.getElementById("status").innerHTML = "Please press Confirm";
-            return spieler_input;
-        }
-        function spielerstein(spieler_input) {
-            spieler_input = 1;
-            document.getElementById("spieler_status").innerHTML = "You choose Stein ";
-            document.getElementById("status").innerHTML = "Please press Confirm";
-            return spieler_input;
+                        //Spieler Input
+                        function spielerschere(spieler_input) {
+                            spieler_input = 0;
+                            document.getElementById("spieler_status").innerHTML = "You choose Schere";
+                            document.getElementById("status").innerHTML = "Please press Confirm";
+                            return spieler_input;
+                        }
+                        function spielerstein(spieler_input) {
+                            spieler_input = 1;
+                            document.getElementById("spieler_status").innerHTML = "You choose Stein ";
+                            document.getElementById("status").innerHTML = "Please press Confirm";
+                            return spieler_input;
 
-        }
-        function spielerpapier(spieler_input) {
-            spieler_input = 2;
-            document.getElementById("spieler_status").innerHTML = "You choose Papier ";
-            document.getElementById("status").innerHTML = "Please press Confirm";
-            return spieler_input;
-        }
+                        }
+                        function spielerpapier(spieler_input) {
+                            spieler_input = 2;
+                            document.getElementById("spieler_status").innerHTML = "You choose Papier ";
+                            document.getElementById("status").innerHTML = "Please press Confirm";
+                            return spieler_input;
+                        }
 
-        //Confirm
-        function confirm(con, total_spieler_wins, total_bot_wins, total_draws, beenden, spieler_input, bot_input, draws, bot_wins, spieler_wins) {
-            con = 1;
-            document.getElementById("status").innerHTML = "Confirmed";
-            bot_input = Math.floor(Math.random() * 3);
-            const [con, total_spieler_wins, total_bot_wins, total_draws, beenden] = confirm();
+                        //Confirm
+                        function confirm(con, total_spieler_wins, total_bot_wins, total_draws, beenden, spieler_input, bot_input, draws, bot_wins, spieler_wins) {
+                            con = 1;
+                            document.getElementById("status").innerHTML = "Confirmed";
+                            bot_input = Math.floor(Math.random() * 3);
+                            const [con, total_spieler_wins, total_bot_wins, total_draws, beenden] = confirm();
 
-            //Bot Schere
-            if (bot_input === 0) {
-                document.getElementById("bot_status").innerHTML = "Bot choose Schere";
-                if (spieler_input == 0) {
-                    draws++;
-                    document.getElementById("status").innerHTML = "Draw";
-                    beenden--;
-                }
-                else if (spieler_input == 1) {
-                    document.getElementById("status").innerHTML = "You Win";
-                    spieler_wins++;
-                    beenden++;
-                }
-                else if (spieler_input == 2) {
-                    document.getElementById("status").innerHTML = "Bot Wins";
-                    bot_wins++;
-                    beenden++;
-                }
-            }
+                            //Bot Schere
+                            if (bot_input === 0) {
+                                document.getElementById("bot_status").innerHTML = "Bot choose Schere";
+                                if (spieler_input == 0) {
+                                    draws++;
+                                    document.getElementById("status").innerHTML = "Draw";
+                                    beenden--;
+                                }
+                                else if (spieler_input == 1) {
+                                    document.getElementById("status").innerHTML = "You Win";
+                                    spieler_wins++;
+                                    beenden++;
+                                }
+                                else if (spieler_input == 2) {
+                                    document.getElementById("status").innerHTML = "Bot Wins";
+                                    bot_wins++;
+                                    beenden++;
+                                }
+                            }
 
-            //Bot Stein
-            else if (bot_input == 1) {
-                document.getElementById("bot_status").innerHTML = "Bot choose Schere";
-                if (spieler_input === 0) {
-                    document.getElementById("status").innerHTML = "Bot Wins";
-                    bot_wins++;
-                    beenden++;
-                }
-                else if (spieler_input == 1) {
-                    draws++;
-                    document.getElementById("status").innerHTML = "Draw";
-                    beenden--;
-                }
-                else if (spieler_input == 2) {
-                    document.getElementById("status").innerHTML = "You Win";
-                    spieler_wins++;
-                    beenden++;
-                }
-            }
+                            //Bot Stein
+                            else if (bot_input == 1) {
+                                document.getElementById("bot_status").innerHTML = "Bot choose Schere";
+                                if (spieler_input === 0) {
+                                    document.getElementById("status").innerHTML = "Bot Wins";
+                                    bot_wins++;
+                                    beenden++;
+                                }
+                                else if (spieler_input == 1) {
+                                    draws++;
+                                    document.getElementById("status").innerHTML = "Draw";
+                                    beenden--;
+                                }
+                                else if (spieler_input == 2) {
+                                    document.getElementById("status").innerHTML = "You Win";
+                                    spieler_wins++;
+                                    beenden++;
+                                }
+                            }
 
-            //Bot Papier
-            else if (bot_input == 2) {
-                document.getElementById("bot_status").innerHTML = "Bot choose Schere";
-                if (spieler_input == 0) {
-                    document.getElementById("status").innerHTML = "You Win";
-                    spieler_wins++;
-                    beenden++;
-                }
-                else if (spieler_input == 1) {
-                    document.getElementById("status").innerHTML = "Bot Wins";
-                    bot_wins++;
-                    beenden++;
-                }
-                else if (spieler_input == 2) {
-                    draws++;
-                    document.getElementById("status").innerHTML = "Draw";
-                    beenden--;
-                }
-            }
-            if (beenden == 3) {
-                beenden = 0;
-                if (spieler_wins >= 2) {
-                    document.getElementById("status").innerHTML = "You win the round!!!";
-                    total_spieler_wins++;
-                }
-                else if (bot_wins >= 2) {
-                    document.getElementById("status").innerHTML = "The Bot wins the Round!!!";
-                    total_bot_wins++;
-                }
-                total_draws = total_draws + draws;
-                document.getElementById("total_spieler_wins_status").innerHTML = "Total Spieler Wins: " + total_spieler_wins;
-                document.getElementById("totabot_wins_status").innerHTML = "Total Bot Wins: " + total_bot_wins;
-                document.getElementById("total_draws_status").innerHTML = "Tota Draws: " + total_draws;
-                spieler_wins = 0;
-                bot_wins = 0;
-                draws = 0;
-            }
-            else {
-                total_draws = total_draws + draws;
-                document.getElementById("total_draws_status").innerHTML = "Tota Draws: " + total_draws;
-            }
-            return [spieler_wins, bot_wins, total_spieler_wins, total_bot_wins, draws, total_draws, beenden, con];
-        }
+                            //Bot Papier
+                            else if (bot_input == 2) {
+                                document.getElementById("bot_status").innerHTML = "Bot choose Schere";
+                                if (spieler_input == 0) {
+                                    document.getElementById("status").innerHTML = "You Win";
+                                    spieler_wins++;
+                                    beenden++;
+                                }
+                                else if (spieler_input == 1) {
+                                    document.getElementById("status").innerHTML = "Bot Wins";
+                                    bot_wins++;
+                                    beenden++;
+                                }
+                                else if (spieler_input == 2) {
+                                    draws++;
+                                    document.getElementById("status").innerHTML = "Draw";
+                                    beenden--;
+                                }
+                            }
+                            if (beenden == 3) {
+                                beenden = 0;
+                                if (spieler_wins >= 2) {
+                                    document.getElementById("status").innerHTML = "You win the round!!!";
+                                    total_spieler_wins++;
+                                }
+                                else if (bot_wins >= 2) {
+                                    document.getElementById("status").innerHTML = "The Bot wins the Round!!!";
+                                    total_bot_wins++;
+                                }
+                                total_draws = total_draws + draws;
+                                document.getElementById("total_spieler_wins_status").innerHTML = "Total Spieler Wins: " + total_spieler_wins;
+                                document.getElementById("totabot_wins_status").innerHTML = "Total Bot Wins: " + total_bot_wins;
+                                document.getElementById("total_draws_status").innerHTML = "Tota Draws: " + total_draws;
+                                spieler_wins = 0;
+                                bot_wins = 0;
+                                draws = 0;
+                            }
+                            else {
+                                total_draws = total_draws + draws;
+                                document.getElementById("total_draws_status").innerHTML = "Tota Draws: " + total_draws;
+                            }
+                            return [spieler_wins, bot_wins, total_spieler_wins, total_bot_wins, draws, total_draws, beenden, con];
+                        }
 
-        //Cancel
-        function cancel(con) {
-            spieler_input = 3;
-            con = 0;
-        }
+                        //Cancel
+                        function cancel(con) {
+                            spieler_input = 3;
+                            con = 0;
+                        }
 
-    </script>
+                    </script>
+                </body>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_left">
+            <div class="footer_left_link_box">
+                <a class="footer_left_link" href="impressum.html">Impressum</a>
+            </div>
+        </div>
+        <div class="footer_middle">
+            <img src="smiley-face.png" alt="smiley-face">
+        </div>
+        <div class="footer_right">
+            Erstellt von Prinzinger
+        </div>
+    </div>
+
 </body>
 
 </html>
