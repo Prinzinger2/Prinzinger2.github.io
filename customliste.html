@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Liste</title>
+    <link rel="stylesheet" href="customliste_style.css">
+    <link rel="icon" type="image/x-icon" href="Schilkrötehoch_favicon.png">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_left">
+            <div class="status_left">Aktuelle Seite: </div>
+            <div class="status_right">Custom Liste</div>
+        </div>
+        <div class="header_right">
+            <div class="suchen-left">Suchen</div>
+            <div class="suchen-right">suchen...</div>
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="aside">
+            <div class="menue-head">Menü:</div>
+            <div class="menue"><a class="menue_link" href="index.html">Startseite</a></div>
+            <div class="menue"><a class="menue_link" href="sc-st-pa.html">Schere Stein Papier</a></div>
+            <div class="menue"><a class="menue_link" href="chaty-sc-st-pa3.html">AI Schere Stein Papier</a></div>
+            <div class="menue"><a class="menue_link" href="customliste.html">Custom Liste</a></div>
+            <div class="menue"><a class="menue_link" href="kontakte.html">Kontakte</a></div>
+            <div class="menue"><a class="menue_link" href="impressum.html">Impressum</a></div>
+        </div>
+
+        <div class="main">
+            <div class="top_head_box">
+                <div class="top_head">Custom Liste</div>
+                <div class="top_sub-head">
+                    <p>Hier kannst du deine eigenen Listen anlegen und nach iherer Wichtigkeit sortieren</p>
+                </div>
+            </div>
+            <div class="list_creat_box">
+                <input id="creat-head_bar" type="text" class="creat-head_bar" placeholder="Titel">
+                <textarea id="creat-desc_bar" type="text" class="creat-desc_bar" placeholder="Description">
+                <button id="creat-impt_mod-up_btn" class="creat-impt_mod-up_btn">△</button>
+                <input id="creat-impt_bar" type="text" class="creat-impt_bar" placeholder="00">
+                <button id="creat-impt_mod-down_btn" class="creat-impt_mod-down_btn">▽</button>
+                <button id="list_creat_btn" class="list_creat_btn">✓</button>
+            </div>
+            <ul id="center_list_box" class="center_list_box"></ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_left">
+            <div class="footer_left_link_box">
+                <a class="footer_left_link" href="impressum.html">Impressum</a>
+            </div>
+        </div>
+        <div class="footer_middle">
+            <img src="smiley-face.png" alt="smiley-face">
+        </div>
+        <div class="footer_right">
+            Erstellt von Prinzinger
+        </div>
+    </div>
+    <script src="customliste_script.js"></script>
+</body>
+
+</html>
