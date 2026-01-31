@@ -21,7 +21,7 @@ function loadList() {
 }
 
 function createImportanceEnterPress(event) {
-    if (event.key === "Enter" && event.shiftKey) {
+    if (event.key === "Enter") {
         event.preventDefault();
 
         createList();
