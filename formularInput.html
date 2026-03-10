@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL-Saver-Input</title>
+    <link rel="stylesheet" href="formularInput_style.css">
+    <link rel="icon" type="image/x-icon" href="Schilkrötehoch_favicon.png">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_left">
+            <div class="status_left">Aktuelle Seite: </div>
+            <div class="status_right">URL-Saver-Input</div>
+        </div>
+        <div class="header_right">
+            <div class="suchen-left">Suchen</div>
+            <div class="suchen-right">suchen...</div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="aside">
+            <div class="menue-head">Menü:</div>
+            <div class="menue"><a class="menue_link" href="index.html">Startseite</a></div>
+            <div class="menue"><a class="menue_link" href="sc-st-pa.html">Schere Stein Papier</a></div>
+            <div class="menue"><a class="menue_link" href="chaty-sc-st-pa3.html">AI Schere Stein Papier</a></div>
+            <div class="menue"><a class="menue_link" href="customliste.html">Custom Liste</a></div>
+            <div class="menue"><a class="menue_link" href="kontakte.html">Kontakte</a></div>
+            <div class="menue"><a class="menue_link" href="impressum.html">Impressum</a></div>
+        </div>
+        <div class="main">
+            <div class="top_head_box">
+                <div class="top_head">URL-Saver</div>
+                <div class="top_sub-head">
+                    <p>Hier kannst du URLs mit Vorschaubild speichern. Wenn du sie privat speicherst können sie nur per
+                        Benutzername und Passwort geöffnet werden.</p>
+                </div>
+            </div>
+
+            <form id="formular">
+                <div class="list_creat_box">
+                    <label class="creat-head_label" for="displayname">Display-Name</label>
+                    <input class="creat-head_bar" type="text" name="displayname" id="displayname"
+                        placeholder="Beispiel-Name..." required>
+                </div>
+                <div class="list_creat_box">
+                    <label class="creat-head_label" for="url">Web-URL</label>
+                    <input class="creat-head_bar" type="url" name="url" id="url"
+                        placeholder="https://www.youtube.com/..." required>
+                </div>
+                <div class="list_creat_box">
+                    <label class="creat-head_label" for="previewColor">Vorschau-Farbe</label>
+                    <input class="list_creat_btn" type="color" name="previewColor" id="previewColor" required>
+                </div>
+                <div class="list_creat_box">
+                    <label class="creat-head_label" for="saveAsPrivate">URL Privat speichern?</label>
+                    <input class="list_creat_btn" type="checkbox" name="saveAsPrivate" id="saveAsPrivate">
+                </div>
+                <div class="list_creat_box">
+                    <label class="creat-head_label" for="username">Benutzername</label>
+                    <input class="creat-head_bar" type="text" name="username" id="username" placeholder="Kaliber69..."
+                        required>
+                </div>
+                <div class="list_creat_box">
+                    <label class="creat-head_label" for="password">Passwort</label>
+                    <input class="creat-head_bar" type="password" name="password" id="password" placeholder="MikL.."
+                        required>
+                </div>
+                <div class="list_creat_box">
+                    <label class="creat-head_label" for="submit_btn">Submit</label>
+                    <button id="submit_btn" name="submit_btn" class="list_creat_btn">✓</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="footer_left">
+            <div class="footer_left_link_box">
+                <a class="footer_left_link" href="impressum.html">Impressum</a>
+            </div>
+        </div>
+        <div class="footer_middle">
+            <img src="smiley-face.png" alt="smiley-face">
+        </div>
+        <div class="footer_right">
+            Erstellt von Prinzinger
+        </div>
+    </div>
+    <script src="formularInput_script.js"></script>
+</body>
+
+</html>
